@@ -1,0 +1,10 @@
+module.exports = {
+    resolver: {
+        Mutation: {
+            createComment: {
+                policies: ["global.Debug"],
+                resolver: "Comment.create"
+            }
+        },
+    },
+};
